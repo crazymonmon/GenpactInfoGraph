@@ -1,0 +1,28 @@
+html, body {
+  height:100%;
+} 
+
+svg {
+  display:block;
+  margin: 0 auto;
+}
+
+#wrapper {
+  width:960px;
+  margin: 0 auto;
+}
+
+#CompaniesImpacted {
+  width:320px;
+  float: left;
+}
+
+#BigGraph {
+  width:640px;
+  float:right;
+}
+
+#AverageVolatility {
+  width: 320px;
+  float: left;
+}
