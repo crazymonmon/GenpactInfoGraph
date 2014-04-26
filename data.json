@@ -1,0 +1,40 @@
+{
+	"IndustryOne": {
+		"CompaniesImpacted": [
+			{"q": "Q1", "percent": 5.0},
+		    {"q": "Q2", "percent": 5.0},
+		    {"q": "Q3", "percent": 5.0},
+		    {"q": "Q4", "percent": 5.0}
+	 	],
+	 	"AverageVolatility": [
+		 	{"q": "Q1", "percent": 2.25},
+		    {"q": "Q2", "percent": 32.0},
+		    {"q": "Q3", "percent": 10.0},
+		    {"q": "Q4", "percent": 91.9}
+	 	],
+	 	"BigGraph": [
+	 		{"label": "label1", "d1": 75, "d2": 20},
+	      	{"label": "label2", "d1": -54, "d2": -20},
+	      	{"label": "A very long label", "d1": 20, "d2": 100}
+	 	]
+ 	},
+ 	"IndustryTwo": {
+ 		"CompaniesImpacted": [
+			{"q": "Q1", "percent": 39.0},
+		    {"q": "Q2", "percent": 21.0},
+		    {"q": "Q3", "percent": 79.0},
+		    {"q": "Q4", "percent": 65.3 }
+	 	],
+	 	"AverageVolatility": [
+		 	{"q": "Q1", "percent": 72.2},
+		    {"q": "Q2", "percent": 3.0},
+		    {"q": "Q3", "percent": 60.0},
+		    {"q": "Q4", "percent": 5.9}
+	 	],
+	 	"BigGraph": [
+	 		{"label": "label1", "d1": -75, "d2": -20},
+	      	{"label": "label2", "d1": 54, "d2": 30},
+	      	{"label": "A very long label", "d1": 80, "d2": 10}
+	 	]
+ 	}
+}
