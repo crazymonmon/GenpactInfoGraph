@@ -1,40 +1,62 @@
 {
-	"IndustryOne": {
-		"CompaniesImpacted": [
-			{"q": "Q1", "percent": 5.0},
-		    {"q": "Q2", "percent": 5.0},
-		    {"q": "Q3", "percent": 5.0},
-		    {"q": "Q4", "percent": 5.0}
-	 	],
-	 	"AverageVolatility": [
-		 	{"q": "Q1", "percent": 2.25},
-		    {"q": "Q2", "percent": 32.0},
-		    {"q": "Q3", "percent": 10.0},
-		    {"q": "Q4", "percent": 91.9}
-	 	],
-	 	"BigGraph": [
-	 		{"label": "label1", "d1": 75, "d2": 20},
-	      	{"label": "label2", "d1": -54, "d2": -20},
-	      	{"label": "A very long label", "d1": 20, "d2": 100}
-	 	]
- 	},
- 	"IndustryTwo": {
- 		"CompaniesImpacted": [
-			{"q": "Q1", "percent": 39.0},
-		    {"q": "Q2", "percent": 21.0},
-		    {"q": "Q3", "percent": 79.0},
-		    {"q": "Q4", "percent": 65.3 }
-	 	],
-	 	"AverageVolatility": [
-		 	{"q": "Q1", "percent": 72.2},
-		    {"q": "Q2", "percent": 3.0},
-		    {"q": "Q3", "percent": 60.0},
-		    {"q": "Q4", "percent": 5.9}
-	 	],
-	 	"BigGraph": [
-	 		{"label": "label1", "d1": -75, "d2": -20},
-	      	{"label": "label2", "d1": 54, "d2": 30},
-	      	{"label": "A very long label", "d1": 80, "d2": 10}
-	 	]
- 	}
+  "BFS-Retail": {
+    "Industries": {
+      "q113": 21.100837935771,
+      "q213": 89.9560666490613,
+      "q313": 42.7604503052092,
+      "q413": 77.86,
+      "FYAvg": 30.439715279012
+    },
+    "CompaniesImpacted": {
+      "q113": 62.1621621621622,
+      "q213": 48.6486486486487,
+      "q313": 70.2702702702703,
+      "q413": 56,
+      "FYAvg": 62.1621621621622
+    },
+    "AverageVolatility": {
+      "q113": 20.62162162162162,
+      "q213": 10.7027027027027,
+      "q313": 17.89189189189189,
+      "q413": 18.76,
+      "FYAvg": 19.86486486486487
+    },
+    "Others": {
+      "FinancialIndustries": {
+        "q113": 40,
+        "q213": 30,
+        "q313": 20,
+        "q413": 10,
+        "FYAvg": 11
+      },
+      "RegulatoryIndustries": {
+        "q113": 50,
+        "q213": 50,
+        "q313": 90,
+        "q413": 23,
+        "FYAvg": 23
+      },
+      "MAIndustries": {
+        "q113": 12,
+        "q213": 32,
+        "q313": 54,
+        "q413": 67,
+        "FYAvg": 31.439715279012
+      },
+      "RestructuringIndustries": {
+        "q113": 21.100837935771,
+        "q213": 38.9560666490613,
+        "q313": 42.7604503052092,
+        "q413": 20.86,
+        "FYAvg": 30.439715279012
+      },
+      "LeadershipIndustries": {
+        "q113": 42,
+        "q213": 54,
+        "q313": 12,
+        "q413": 12,
+        "FYAvg": 89
+      }
+    }
+  }
 }

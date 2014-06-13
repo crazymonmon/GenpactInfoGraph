@@ -3,21 +3,24 @@
 <head>
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <script src="js/d3.v3.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/data.js" type="text/javascript"></script>
 </head>
 <body>
-Adding heading aamear 
 <div id="wrapper">
    <div id="industry">
-      <button onclick="ShowGraph('IndustryOne')">Industry one</button>
-      <button onclick="ShowGraph('IndustryTwo')">Industry two</button>
+      <button onclick="ShowGraph('BFS-Retail', 'q113', 'q213')">Industry one</button>
+      <button onclick="ShowGraph('BFS-Retail', 'q213', 'q313')">Industry two</button>
+   </div>
+   <div id="TotalVolatility">
+      
    </div>
    <div id="CompaniesImpacted">
-      <p>Companies Impacted</p>
+      
    </div>
    <div id="BigGraph"></div>
    <div id="AverageVolatility">
-      <p>Avg. # of volatility events</p>
+     
    </div>
 </div>
 </body>

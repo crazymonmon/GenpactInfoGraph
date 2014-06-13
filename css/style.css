@@ -12,17 +12,26 @@ svg {
   margin: 0 auto;
 }
 
+#TotalVolatility {
+  width:200px;
+  height:300px;
+  /*float: left;*/
+}
+
 #CompaniesImpacted {
   width:320px;
-  float: left;
+  height:100px;
+  /*float: left;*/
 }
 
 #BigGraph {
-  width:640px;
-  float:right;
+  width: 640px;
+  height: 400px;
+  /*float:right;*/
 }
 
 #AverageVolatility {
-  width: 320px;
-  float: left;
+  width: 200px;
+  height:100px;
+  /*float: left;*/
 }
