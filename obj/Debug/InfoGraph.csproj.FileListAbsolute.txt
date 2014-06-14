@@ -1,0 +1,30 @@
+C:\Aamear\InfoGraph\InfoGraph\bin\InfoGraph.dll
+C:\Aamear\InfoGraph\InfoGraph\bin\InfoGraph.pdb
+C:\Aamear\InfoGraph\InfoGraph\obj\Debug\InfoGraph.csprojResolveAssemblyReference.cache
+C:\Aamear\InfoGraph\InfoGraph\obj\Debug\InfoGraph.dll
+C:\Aamear\InfoGraph\InfoGraph\obj\Debug\InfoGraph.pdb
+C:\Users\Syed\Desktop\InfoGraph\InfoGraph\bin\InfoGraph.dll
+C:\Users\Syed\Desktop\InfoGraph\InfoGraph\bin\InfoGraph.pdb
+C:\Users\Syed\Desktop\InfoGraph\InfoGraph\obj\Debug\InfoGraph.csprojResolveAssemblyReference.cache
+C:\Users\Syed\Desktop\InfoGraph\InfoGraph\obj\Debug\InfoGraph.dll
+C:\Users\Syed\Desktop\InfoGraph\InfoGraph\obj\Debug\InfoGraph.pdb
+C:\Users\Swetha\Desktop\INFOGRAPH 3-5-2014\InfoGraph\InfoGraph\bin\InfoGraph.dll
+C:\Users\Swetha\Desktop\INFOGRAPH 3-5-2014\InfoGraph\InfoGraph\bin\InfoGraph.pdb
+C:\Users\Swetha\Desktop\INFOGRAPH 3-5-2014\InfoGraph\InfoGraph\obj\Debug\InfoGraph.csprojResolveAssemblyReference.cache
+C:\Users\Swetha\Desktop\INFOGRAPH 3-5-2014\InfoGraph\InfoGraph\obj\Debug\InfoGraph.dll
+C:\Users\Swetha\Desktop\INFOGRAPH 3-5-2014\InfoGraph\InfoGraph\obj\Debug\InfoGraph.pdb
+C:\Users\Aamear\Desktop\ammear\InfoGraph\InfoGraph\bin\InfoGraph.dll
+C:\Users\Aamear\Desktop\ammear\InfoGraph\InfoGraph\bin\InfoGraph.pdb
+C:\Users\Aamear\Desktop\ammear\InfoGraph\InfoGraph\obj\Debug\InfoGraph.dll
+C:\Users\Aamear\Desktop\ammear\InfoGraph\InfoGraph\obj\Debug\InfoGraph.pdb
+C:\Users\Aamear\Desktop\ammear\InfoGraph\InfoGraph\obj\Debug\InfoGraph.csprojResolveAssemblyReference.cache
+C:\Users\Swetha\Desktop\ammear\aamear coorect copy\InfoGraph\InfoGraph\bin\InfoGraph.dll
+C:\Users\Swetha\Desktop\ammear\aamear coorect copy\InfoGraph\InfoGraph\bin\InfoGraph.pdb
+C:\Users\Swetha\Desktop\ammear\aamear coorect copy\InfoGraph\InfoGraph\obj\Debug\InfoGraph.csprojResolveAssemblyReference.cache
+C:\Users\Swetha\Desktop\ammear\aamear coorect copy\InfoGraph\InfoGraph\obj\Debug\InfoGraph.dll
+C:\Users\Swetha\Desktop\ammear\aamear coorect copy\InfoGraph\InfoGraph\obj\Debug\InfoGraph.pdb
+C:\Users\Aamear\Desktop\Infograph v2\InfoGraph\InfoGraph\bin\InfoGraph.dll
+C:\Users\Aamear\Desktop\Infograph v2\InfoGraph\InfoGraph\bin\InfoGraph.pdb
+C:\Users\Aamear\Desktop\Infograph v2\InfoGraph\InfoGraph\obj\Debug\InfoGraph.csprojResolveAssemblyReference.cache
+C:\Users\Aamear\Desktop\Infograph v2\InfoGraph\InfoGraph\obj\Debug\InfoGraph.dll
+C:\Users\Aamear\Desktop\Infograph v2\InfoGraph\InfoGraph\obj\Debug\InfoGraph.pdb
