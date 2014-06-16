@@ -3,8 +3,8 @@
 window.onload = function() {
   d3.json("data.json", function(data) {
                           IndustryData = data["BFS-Retail"];
-                          TotalVolatility(IndustryData["Industries"], "q113", "q413");
-                          CompaniesImpacted(IndustryData["CompaniesImpacted"], "q113", "q413");
+                          TotalVolatility(IndustryData["Industries"], "q113", "q213");
+                          CompaniesImpacted(IndustryData["CompaniesImpacted"], "q113", "q213");
                           AverageVolatility(IndustryData["AverageVolatility"], "q113", "q213");
                           BigGraph(IndustryData["Others"], "q113", "q213");
                         });
@@ -105,11 +105,12 @@ function TotalVolatility(graphData, Q1, Q2) {
     .attr("x", function (d, i) {
             return (barWidth + barSeparation) * i;
           })
-      .attr("dx", ".35em")
-      .attr("dy", "1.2em")
+      .attr("dx", "0.0em")
+      .attr("dy", "0.5em")
       .attr("fill", "black")
       .text(  function (d) { 
             return String(d.toFixed(1));
+            
           });
 
    textLabel.attr("y", function(d) {
@@ -257,10 +258,10 @@ function CompaniesImpacted(graphData, Q1, Q2) {
             return (barWidth + barSeparation) * i;
           })
       .attr("dx", "-2.50em")
-      .attr("dy", "1.35em")
+      .attr("dy", "0.8em")
       .attr("fill", "black")
       .text(  function (d) { 
-            return String(d.toFixed(1));
+            return String(d.toFixed(1) + "%");
           });
 
    textLabel.attr("x", 0)
@@ -312,7 +313,7 @@ function CompaniesImpactedUpdate(graphData, Q1, Q2) {
   textValue
       .transition()
       .text(  function (d) { 
-            return String(d.toFixed(1));
+            return String(d.toFixed(1) +"%");
           });
 
   textLabel
@@ -394,7 +395,7 @@ function AverageVolatility(graphData, Q1, Q2) {
             return (barWidth + barSeparation) * i;
           })
       .attr("dx", "-3.50em")
-      .attr("dy", "1.35em")
+      .attr("dy", "0.8em")
       .attr("fill", "black")
       .text(  function (d) { 
             return String(d.toFixed(1) + "%");
@@ -614,6 +615,7 @@ function BigGraph(graphData, Q1, Q2) {
             return (height/2) - linearScale(d);
           })
     .attr("dx", function (d) {
+
             if (d > 0) {
               return ".35em";
             } else {
@@ -640,6 +642,7 @@ function BigGraph(graphData, Q1, Q2) {
     .attr("y", height/2)
     .attr("fill", "black")
     .attr("dy", function (d) {
+
             if (d < 0) {
               return "-1.2em";
             } else {
@@ -799,6 +802,7 @@ function BigGraphUpdate(graphData, Q1, Q2) {
   textLabel
     .transition()
     .attr("dy", function (d) {
+
             if (d > 0) {
               return "1.2em";
             } else {
