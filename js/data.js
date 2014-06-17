@@ -134,7 +134,19 @@ function TotalVolatilityUpdate(graphData, Q1, Q2) {
                     .domain([0,100])
                     .range([0,height]);
 
+  existingData = svgContainer.selectAll(".rectFG").data();
+  existingLabel = svgContainer.selectAll(".textLabel")[0];
   
+  if (Q1 == null) {
+    data[0] = existingData[0];
+    label[0] = existingLabel[0].innerHTML;
+  }
+
+  if (Q2 == null) {
+    data[1] = existingData[1];
+    label[1] = existingLabel[1].innerHTML;
+  }
+
   // Bar graph
   var barFG = svgContainer.selectAll(".rectFG").data(data);
   barFG.exit().remove();
@@ -278,6 +290,19 @@ function CompaniesImpactedUpdate(graphData, Q1, Q2) {
   var width = $("#CompaniesImpacted").width();
   var svgContainer = d3.select("#CompaniesImpacted").select("svg");
 
+  existingData = svgContainer.selectAll(".rectFG").data();
+  existingLabel = svgContainer.selectAll(".textLabel")[0];
+  
+  if (Q1 == null) {
+    data[0] = existingData[0];
+    label[0] = existingLabel[0].innerHTML;
+  }
+
+  if (Q2 == null) {
+    data[1] = existingData[1];
+    label[1] = existingLabel[1].innerHTML;
+  }
+
   var barFG = svgContainer.selectAll(".rectFG").data(data);
   barFG.exit().remove();
   barFG.enter().append("rect")
@@ -408,11 +433,24 @@ function AverageVolatility(graphData, Q1, Q2) {
 }
 
 function AverageVolatilityUpdate(graphData, Q1, Q2) {
- data = [graphData[Q1], graphData[Q2]];
+  data = [graphData[Q1], graphData[Q2]];
   label = [Q1, Q2];
 
   var width = $("#AverageVolatility").width();
   var svgContainer = d3.select("#AverageVolatility").select("svg");
+
+  existingData = svgContainer.selectAll(".rectFG").data();
+  existingLabel = svgContainer.selectAll(".textLabel")[0];
+  
+  if (Q1 == null) {
+    data[0] = existingData[0];
+    label[0] = existingLabel[0].innerHTML;
+  }
+
+  if (Q2 == null) {
+    data[1] = existingData[1];
+    label[1] = existingLabel[1].innerHTML;
+  }
 
   var barFG = svgContainer.selectAll(".rectFG").data(data);
   barFG.exit().remove();
@@ -549,9 +587,9 @@ function BigGraph(graphData, Q1, Q2) {
     .attr("width", barWidth)
     .attr("fill", function (d) {
               if (d > 0) {
-                return "orange"
+                return "orange";
               } else {
-                return "green"
+                return "green";
               }
             });
 
@@ -563,16 +601,16 @@ function BigGraph(graphData, Q1, Q2) {
           })
     .attr("dx", function (d) {
             if (d > 0) {
-              return ".35em"
+              return ".35em";
             } else {
-              return "-0.2em"
-            }
+              return "-0.2em";
+            };
           })
     .attr("dy", function (d) {
             if (d > 0) {
-              return "-0.2em"
+              return "-0.2em";
             } else {
-              return "1.2em"
+              return "1.2em";
             }
           })
     .attr("fill", "grey")
@@ -680,31 +718,38 @@ function BigGraphUpdate(graphData, Q1, Q2) {
     ];
  
   var svgContainer = d3.select("#BigGraph").select("svg");
-              
-  var barOne = svgContainer.selectAll(".barOne").data(dataQ1);
-  barOne.exit().remove();
-  barOne.enter().append("rect")
-                  .attr("class", "barOne");
-
-  var barOneLabel = svgContainer.selectAll(".barOneLabel").data(dataQ1);
-  barOne.exit().remove();
-  barOne.enter().append("text")
-                  .attr("class", "barOneLabel");
   
-  var barTwo = svgContainer.selectAll(".barTwo").data(dataQ2);
-  barTwo.exit().remove();
-  barTwo.enter().append("rect")
-                  .attr("class", "barTwo");
- 
-  var barTwoLabel = svgContainer.selectAll(".barTwoLabel").data(dataQ2);
-  barTwoLabel.exit().remove();
-  barTwoLabel.enter().append("text")
-                  .attr("class", "barTwoLabel");
+  if (Q1 != null) {           
+    var barOne = svgContainer.selectAll(".barOne").data(dataQ1);
+    barOne.exit().remove();
+    barOne.enter().append("rect")
+                    .attr("class", "barOne");
 
-  var textLabel = svgContainer.selectAll(".textLabel").data(dataQ1);
-  textLabel.exit().remove();
-  textLabel.enter().append("text")
-                  .attr("class", "textLabel");
+    var barOneLabel = svgContainer.selectAll(".barOneLabel").data(dataQ1);
+    barOne.exit().remove();
+    barOne.enter().append("text")
+                    .attr("class", "barOneLabel");
+  }
+  
+  if (Q2 != null) {
+    var barTwo = svgContainer.selectAll(".barTwo").data(dataQ2);
+    barTwo.exit().remove();
+    barTwo.enter().append("rect")
+                    .attr("class", "barTwo");
+   
+    var barTwoLabel = svgContainer.selectAll(".barTwoLabel").data(dataQ2);
+    barTwoLabel.exit().remove();
+    barTwoLabel.enter().append("text")
+                    .attr("class", "barTwoLabel");
+  }
+
+  if (Q1 != null) {
+    var textLabel = svgContainer.selectAll(".textLabel").data(dataQ1);
+    textLabel.exit().remove();
+    textLabel.enter().append("text")
+                    .attr("class", "textLabel");
+  }
+
   barOne
     .transition()
     .attr("y", function (d) {
