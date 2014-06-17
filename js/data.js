@@ -103,12 +103,14 @@ function TotalVolatility(graphData, Q1, Q2) {
     .attr("fill", "#F68F40");
 
   
-  textValue.attr("y", 0)
+  textValue.attr("y", function(d) {
+                    return height - linearScale(d);
+            })
     .attr("x", function (d, i) {
             return (barWidth + barSeparation) * i;
           })
       .attr("dx", "0.0em")
-      .attr("dy", "0.5em")
+      .attr("dy", "-.35em")
       .attr("fill", "black")
       .text(  function (d) { 
             return String(d.toFixed(1));
@@ -187,6 +189,9 @@ function TotalVolatilityUpdate(graphData, Q1, Q2) {
   
   textValue
       .transition()
+      .attr("y", function(d) {
+                    return height - linearScale(d);
+            })
       .text(  function (d) { 
             return String(d.toFixed(1));
           });
