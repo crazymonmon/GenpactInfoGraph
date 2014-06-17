@@ -147,47 +147,48 @@ fill: #42BBE8;
     width:100%;
 	}
 .styled-select select {
-   background: transparent;
-   width: 120px;
-   padding: 5px;
-   font-size: 16px;
-   line-height: 1;
-   border: 0;
-   border-radius: 0;
-   height: 34px;
-   -webkit-appearance: none;
+   background: none repeat scroll 0% 0% transparent;
+width: 154px;
+padding: 5px;
+font-size: 22px;
+line-height: 1;
+border: 0px none;
+border-radius: 0px;
+height: 34px;
+font-weight: bold;
    }
 
 .styled-select {
-   width: 100px;
-   height: 34px;
+   width: 133px;
+   height: 54px;
    overflow: hidden;
    background: url(../Icons/aero_icon.png) no-repeat right #4C4D4F;
    border: 0px solid #ccc;
    margin-left:7em;
-   margin-top:-1.5em;
+   margin-top:-34px;
   
    }
 
 .styled-selects select {
-   background: transparent;
-   width: 120px;
-   padding: 5px;
-   font-size: 16px;
-   line-height: 1;
-   border: 0;
-   border-radius: 0;
-   height: 34px;
-   -webkit-appearance: none;
+   background: none repeat scroll 0% 0% transparent;
+width: 154px;
+padding: 5px;
+font-size: 22px;
+line-height: 1;
+border: 0px none;
+border-radius: 0px;
+height: 34px;
+font-weight: bold;
+   
    }
 
 .styled-selects {
-   width: 100px;
-   height: 34px;
+   width: 133px;
+   height: 54px;
    overflow: hidden;
    background: url(../Icons/aero_icon.png) no-repeat right #4C4D4F;
    border: 0px solid #ccc;
    margin-left:17em;
-   margin-top:-2.5em;  
+   margin-top:-54px;  
    }
 
