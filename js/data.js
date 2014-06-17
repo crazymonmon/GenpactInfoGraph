@@ -13,8 +13,10 @@ window.onload = function() {
 // Updates the data for a given industry
 function ShowGraph(IndustryName, Q1, Q2) {
 //alert(IndustryName);
-//alert(Q1);
-//alert(Q2);
+alert(Q1);
+alert(Q2);
+
+
   d3.json("data.json", function(data) {
                           var IndustryData;
 
@@ -123,7 +125,8 @@ function TotalVolatility(graphData, Q1, Q2) {
       .attr("dy", "-0.35em")
       .attr("fill", "black")
       .text(  function (d, i) { 
-            return label[i];
+         var res = label[i].substring(0, 2);
+            return res.toUpperCase() ;
           });
 }
 
@@ -191,7 +194,8 @@ function TotalVolatilityUpdate(graphData, Q1, Q2) {
    textLabel
       .transition()
       .text(  function (d, i) { 
-            return label[i];
+             var res = label[i].substring(0, 2);
+            return res.toUpperCase() ;
           });
 }
 
@@ -284,7 +288,8 @@ function CompaniesImpacted(graphData, Q1, Q2) {
       .attr("dy", "1.2em")
       .attr("fill", "black")
       .text(  function (d, i) { 
-            return label[i];
+             var res = label[i].substring(0, 2);
+            return res.toUpperCase() ;
           });
 }
 
@@ -344,7 +349,8 @@ function CompaniesImpactedUpdate(graphData, Q1, Q2) {
   textLabel
       .transition()
       .text(  function (d, i) { 
-            return label[i];
+             var res = label[i].substring(0, 2);
+            return res.toUpperCase() ;
           });
 }
 
@@ -434,7 +440,8 @@ function AverageVolatility(graphData, Q1, Q2) {
       .attr("dy", "1.2em")
       .attr("fill", "black")
       .text(  function (d, i) { 
-            return label[i];
+             var res = label[i].substring(0, 2);
+            return res.toUpperCase() ;
           });
 }
 
@@ -493,7 +500,8 @@ function AverageVolatilityUpdate(graphData, Q1, Q2) {
   textLabel
       .transition()
       .text(  function (d, i) { 
-            return label[i];
+             var res = label[i].substring(0, 2);
+            return res.toUpperCase() ;
           });
 }
 

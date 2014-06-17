@@ -91,17 +91,18 @@
 		<div id="compare-box">
 		 <b class="compare-text"> Compare </b>  
 		<div class="styled-select">
-		<select id="Select1" name="D1" onChange="ShowGraph('BFS-Retail', 'q113', 'q213')">
-                    <option value="a" data-image="Icons/Q1_img.png" data-alt="This is a cake">Q1 </option>
-                    <option value="b" data-image="Icons/Q2_img.png" data-alt="Cheesecake!">Q2</option>
+		<select id="Select1" name="D1" onChange="ShowGraph('BFS-Retail', this.value, null)">
+                    <option >Select</option>
+                    <option value="q113" >Q1 </option>
+                    <option value="q213" >Q2</option>
             </select> 
                     <p>(Feb'13 - May'14)</p>
 		</div>
 		<div class="styled-selects">
-             <select id="Select2" name="D1" onChange="SecondSelecttedIndexChanged()"></div>
-          
-                 <option value="b" data-image="Icons/Q2_img.png" data-alt="Cheesecake!">Q2</option>
-                  <option value="a" data-image="Icons/Q1_img.png" data-alt="This is a cake">Q1</option>
+             <select id="Select2" name="D1" onChange="ShowGraph('BFS-Retail', null, this.value)"></div>
+          	<option >Select</option>
+                 <option value="q113" >Q1</option>
+                  <option value="q213" >Q2</option>
                     
             </select>
 			<p>(Feb'13 - May'14)</p>
