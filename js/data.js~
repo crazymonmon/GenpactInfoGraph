@@ -349,7 +349,8 @@ function CompaniesImpactedUpdate(graphData, Q1, Q2) {
   textLabel
       .transition()
       .text(  function (d, i) { 
-            return label[i];
+             var res = label[i].substring(0, 2);
+            return res.toUpperCase() ;
           });
 }
 
@@ -439,7 +440,8 @@ function AverageVolatility(graphData, Q1, Q2) {
       .attr("dy", "1.2em")
       .attr("fill", "black")
       .text(  function (d, i) { 
-            return label[i];
+             var res = label[i].substring(0, 2);
+            return res.toUpperCase() ;
           });
 }
 
@@ -498,7 +500,8 @@ function AverageVolatilityUpdate(graphData, Q1, Q2) {
   textLabel
       .transition()
       .text(  function (d, i) { 
-            return label[i];
+             var res = label[i].substring(0, 2);
+            return res.toUpperCase() ;
           });
 }
 

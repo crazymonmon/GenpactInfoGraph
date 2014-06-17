@@ -13,8 +13,8 @@ window.onload = function() {
 // Updates the data for a given industry
 function ShowGraph(IndustryName, Q1, Q2) {
 //alert(IndustryName);
-alert(Q1);
-alert(Q2);
+//alert(Q1);
+//alert(Q2);
 
 
   d3.json("data.json", function(data) {
