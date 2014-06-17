@@ -16,13 +16,7 @@ svg {
   width:295px;
   height:300px;
   float: left;
-   
-}
-
-#page_1 #page-wrapper #id2-1 #TotalVolatility svg{
-background-image:url('../images/symbol_1.png');
-background-repeat:no-repeat;
-background-position:right bottom;
+  
 }
 
 #TotalVolatility h2 {
@@ -132,7 +126,7 @@ font-size:35px;
 #AverageVolatility .textLabel
 {
 font-size:20px;
-fill: #42BBE8;
+fill: white;
 }
 
 /** Adding Css */
@@ -164,30 +158,8 @@ fill: #42BBE8;
    overflow: hidden;
    background: url(../Icons/aero_icon.png) no-repeat right #4C4D4F;
    border: 0px solid #ccc;
-   margin-left:7em;
-   margin-top:-1.5em;
   
    }
 
-.styled-selects select {
-   background: transparent;
-   width: 120px;
-   padding: 5px;
-   font-size: 16px;
-   line-height: 1;
-   border: 0;
-   border-radius: 0;
-   height: 34px;
-   -webkit-appearance: none;
-   }
 
-.styled-selects {
-   width: 100px;
-   height: 34px;
-   overflow: hidden;
-   background: url(../Icons/aero_icon.png) no-repeat right #4C4D4F;
-   border: 0px solid #ccc;
-   margin-left:17em;
-   margin-top:-2.5em;  
-   }
 
