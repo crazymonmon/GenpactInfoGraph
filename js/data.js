@@ -516,7 +516,7 @@ function BigGraph(graphData, Q1, Q2) {
   var height = jQuery("#BigGraph").height();
 
   var linearScale = d3.scale.linear()
-                      .domain([-100,100])
+                      .domain([-1,1])
                       .range([-0.8* height/2,0.8*height/2]);
 
   var svgContainer = d3.select("#BigGraph").append("svg")
@@ -708,10 +708,11 @@ function BigGraph(graphData, Q1, Q2) {
 
 
 function BigGraphUpdate(graphData, Q1, Q2) {
+
   var height = jQuery("#BigGraph").height();
 
   var linearScale = d3.scale.linear()
-                      .domain([-100,100])
+                      .domain([-1,1])
                       .range([-0.8* height/2,0.8*height/2]);
 
   dataQ1 = [
