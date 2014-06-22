@@ -110,7 +110,7 @@ margin-top:34px;
 margin-bottom:15px;
 }
 #AverageVolatility svg {
-  width: 100px;
+  width: 100%;
   float: left;
 }
 
@@ -189,6 +189,13 @@ font-weight: bold;
    background: url(../Icons/aero_icon.png) no-repeat right #4C4D4F;
    border: 0px solid #ccc;
    margin-left:17em;
-   margin-top:-50px;  
+   margin-top:-54px;  
    }
+
+#BigGraph
+{
+    border-top: 2px solid #848484;
+    margin-right: 54px;
+    margin-top: 124px;
+}
 

@@ -1,15 +1,3 @@
-
-// On page load
-window.onload = function() {
-  d3.json("data.json", function(data) {
-                          IndustryData = data["BFS-Retail"];
-                          TotalVolatility(IndustryData["Industries"], "q113", "q213");
-                          CompaniesImpacted(IndustryData["CompaniesImpacted"], "q113", "q213");
-                          AverageVolatility(IndustryData["AverageVolatility"], "q113", "q213");
-                          BigGraph(IndustryData["Others"], "q113", "q213");
-                        });
-}
-
 // Updates the data for a given industry
 function ShowGraph(IndustryName, Q1, Q2) {
 //alert(IndustryName);
@@ -708,6 +696,8 @@ function BigGraph(graphData, Q1, Q2) {
 
 
 function BigGraphUpdate(graphData, Q1, Q2) {
+
+
 
   var height = jQuery("#BigGraph").height();
 
