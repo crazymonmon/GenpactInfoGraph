@@ -8,38 +8,42 @@ window.onload = function() {
                           AverageVolatility(IndustryData["AverageVolatility"], "q113", "q213");
                           BigGraph(IndustryData["Others"], "q113", "q213");
                         });
+};
+
+function ChangeLabel(labelData, Q1, Q2) {
+  if (Q1 != null) {
+    labelToChange = d3.select("span#quarter1-month");
+    labelToChange.text(labelData[Q1]);
+  }
+
+  if (Q2 != null) {
+    labelToChange = d3.select("span#quarter2-month");
+    labelToChange.text(labelData[Q2]);
+  }
 }
 
 // Updates the data for a given industry
 function ShowGraph(IndustryName, Q1, Q2) {
-//alert(IndustryName);
-alert(Q1);
-alert(Q2);
-
-
   d3.json("data.json", function(data) {
                           var IndustryData;
 
                           IndustryData = data[IndustryName];
                           TotalVolatilityUpdate(
-                            IndustryData["Industries"], Q1, Q2)
+                            IndustryData["Industries"], Q1, Q2);
                           CompaniesImpactedUpdate(
                             IndustryData["CompaniesImpacted"], Q1, Q2);
                           AverageVolatilityUpdate(
                             IndustryData["AverageVolatility"], Q1, Q2);
                           BigGraphUpdate(
-                            IndustryData["Others"], Q1, Q2);                          
+                            IndustryData["Others"], Q1, Q2);
+
+                          ChangeLabel(data["QuarterLabels"], Q1, Q2);
                         });
 }
 
 function TotalVolatility(graphData, Q1, Q2) {
-
-
- 
   data = [graphData[Q1], graphData[Q2]];
   label = [Q1, Q2];
-
-  
   
   var width = jQuery("#TotalVolatility").width();
   var height = jQuery("#TotalVolatility").height();
@@ -750,28 +754,8 @@ function BigGraphUpdate(graphData, Q1, Q2) {
     barOne.exit().remove();
     barOne.enter().append("text")
                     .attr("class", "barOneLabel");
-  }
-  
-  if (Q2 != null) {
-    var barTwo = svgContainer.selectAll(".barTwo").data(dataQ2);
-    barTwo.exit().remove();
-    barTwo.enter().append("rect")
-                    .attr("class", "barTwo");
-   
-    var barTwoLabel = svgContainer.selectAll(".barTwoLabel").data(dataQ2);
-    barTwoLabel.exit().remove();
-    barTwoLabel.enter().append("text")
-                    .attr("class", "barTwoLabel");
-  }
 
-  if (Q1 != null) {
-    var textLabel = svgContainer.selectAll(".textLabel").data(dataQ1);
-    textLabel.exit().remove();
-    textLabel.enter().append("text")
-                    .attr("class", "textLabel");
-  }
-
-  barOne
+     barOne
     .transition()
     .attr("y", function (d) {
             if (d>0) {
@@ -814,7 +798,20 @@ function BigGraphUpdate(graphData, Q1, Q2) {
           return String(d.toFixed(0));
         });
 
-  barTwo
+  }
+  
+  if (Q2 != null) {
+    var barTwo = svgContainer.selectAll(".barTwo").data(dataQ2);
+    barTwo.exit().remove();
+    barTwo.enter().append("rect")
+                    .attr("class", "barTwo");
+   
+    var barTwoLabel = svgContainer.selectAll(".barTwoLabel").data(dataQ2);
+    barTwoLabel.exit().remove();
+    barTwoLabel.enter().append("text")
+                    .attr("class", "barTwoLabel");
+
+    barTwo
     .transition()
     .attr("y", function (d) {
             if (d>0) {
@@ -856,8 +853,15 @@ function BigGraphUpdate(graphData, Q1, Q2) {
     .text(  function (d) { 
           return String(d.toFixed(0));
         });
+  }
 
-  textLabel
+  if (Q1 != null) {
+    var textLabel = svgContainer.selectAll(".textLabel").data(dataQ1);
+    textLabel.exit().remove();
+    textLabel.enter().append("text")
+                    .attr("class", "textLabel");
+
+    textLabel
     .transition()
     .attr("dy", function (d) {
 
@@ -870,4 +874,5 @@ function BigGraphUpdate(graphData, Q1, Q2) {
     .text(  function (d, i) { 
           return dataLabel[i];
         });
+  }
 }
