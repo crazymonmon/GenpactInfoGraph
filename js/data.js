@@ -639,7 +639,7 @@ function BigGraph(graphData, Q1, Q2) {
           })
     .attr("fill", "grey")
     .text(  function (d) { 
-          return String(d.toFixed(0));
+          return String(d.toFixed(2));
         });
 
   barTwo.attr("x", function (d, i) {
@@ -687,7 +687,7 @@ function BigGraph(graphData, Q1, Q2) {
           })
     .attr("fill", "grey")
     .text(  function (d) { 
-          return String(d.toFixed(0));
+          return String(d.toFixed(2));
         });
 
   barTwoGroup.attr("transform", "translate(40,0)");
@@ -799,7 +799,7 @@ function BigGraphUpdate(graphData, Q1, Q2) {
             }
           })
     .text(  function (d) { 
-          return String(d.toFixed(0));
+          return String(d.toFixed(2));
         });
 
   }
@@ -855,7 +855,7 @@ function BigGraphUpdate(graphData, Q1, Q2) {
             }
           })
     .text(  function (d) { 
-          return String(d.toFixed(0));
+          return String(d.toFixed(2));
         });
   }
 

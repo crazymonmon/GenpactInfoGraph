@@ -1,12 +1,3 @@
-<<<<<<< HEAD
-// Updates the data for a given industry
-function ShowGraph(IndustryName, Q1, Q2) {
-//alert(IndustryName);
-//alert(Q1);
-//alert(Q2);
-
-
-=======
 
 // On page load
 window.onload = function() {
@@ -33,7 +24,7 @@ function ChangeLabel(labelData, Q1, Q2) {
 
 // Updates the data for a given industry
 function ShowGraph(IndustryName, Q1, Q2) {
->>>>>>> abadfceb19c87bf95e02c773d0da2a4e7312f909
+
   d3.json("data.json", function(data) {
                           var IndustryData;
 

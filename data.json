@@ -1,8 +1,11 @@
 {
   "QuarterLabels": {
-    "q113": "Jan - Feb",
-    "q213": "Mar - Apr"
-  },
+    "q113": "Feb'13 - Apr'13",
+    "q213": "May'13 - Jul'13",
+    "q313": "Aug'13 - Oct'13",
+    "q413": "Nov'13 - Jan'13",
+    "q114": "Feb'14 - Apr'14"
+    },
   "BFS-Retail": {
     "Industries": {
       "q113": 21.100837935771,
