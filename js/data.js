@@ -59,7 +59,7 @@ function TotalVolatility(graphData, Q1, Q2) {
 
   var linearScale = d3.scale.linear()
                       .domain([0,100])
-                      .range([0,.95*height]);
+                      .range([0,.85*height]);
 
   
   // Creating the elements of the graph
@@ -148,7 +148,7 @@ function TotalVolatilityUpdate(graphData, Q1, Q2) {
   
   var linearScale = d3.scale.linear()
                     .domain([0,100])
-                    .range([0, .95 * height]);
+                    .range([0, .85 * height]);
 
   existingData = svgContainer.selectAll(".rectFG").data();
   existingLabel = svgContainer.selectAll(".textLabel")[0];
@@ -522,7 +522,7 @@ function BigGraph(graphData, Q1, Q2) {
 
   var linearScale = d3.scale.linear()
                       .domain([-1,1])
-                      .range([-0.95*height/2,0.95*height/2]);
+                      .range([-0.85*height/2,0.85*height/2]);
 
   var svgContainer = d3.select("#BigGraph").append("svg")
               .attr("width", width)
@@ -720,7 +720,7 @@ function BigGraphUpdate(graphData, Q1, Q2) {
 
   var linearScale = d3.scale.linear()
                       .domain([-1,1])
-                      .range([-0.95* height/2,0.95*height/2]);
+                      .range([-0.85* height/2,0.85*height/2]);
 
   dataQ1 = [
     graphData["FinancialIndustries"][Q1],
